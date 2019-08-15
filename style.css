@@ -30,9 +30,9 @@ a.logo {
   width: 142px;
   height: 93px;
   position: absolute;
-  bottom: -20px;
+  bottom: -80px;
   right: -8px;
-  background-image: url("images\images\paz_logo.png");
+  background-image: url("images/images/paz_logo.png");
 }
 
 form.search-box button {
