@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="/web/20171018152543cs_/http://www.paz.co.il/css/reset.css" media="all" rel="stylesheet"
         type="text/css" />
+    <link rel="stylesheet" href="reset-style.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script>
@@ -14,105 +15,136 @@
 </head>
 
 <body>
-    <header>
-        <div class="header">
-        <!-- The form -->
-        <form class="search-box" action="action_page.php">
-        <input type="text" placeholder="רשום מילת חיפוש" name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
-      </form>
-    <nav id="mainMenu">
-        <a class="logo" href="http://www.paz.co.il/"></a>
-        <ul>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">אודות</a>
-                <div class="dropdown-content">
-                    <a href="#">אודות</a>
-                    <a href="#">היסטוריה</a>
-                    <a href="#">חזון וערכים</a>
-                    <a href="#">מבנה הקבוצה</a>
-                    <a href="#">חברי דירקטוריון</a>
-                    <a href="#">הנהלת הקבוצה</a>
-                    <a href="#">פרסים והוקרות</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">חטיבות</a>
-                <div class="dropdown-content">
-                    <a href="#">אודות</a>
-                    <a href="#">היסטוריה</a>
-                    <a href="#">חזון וערכים</a>
-                    <a href="#">מבנה הקבוצה</a>
-                    <a href="#">חברי דירקטוריון</a>
-                    <a href="#">הנהלת הקבוצה</a>
-                    <a href="#">פרסים והוקרות</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">אחריות תאגידית</a>
-                <div class="dropdown-content">
-                    <a href="#">אודות</a>
-                    <a href="#">היסטוריה</a>
-                    <a href="#">חזון וערכים</a>
-                    <a href="#">מבנה הקבוצה</a>
-                    <a href="#">חברי דירקטוריון</a>
-                    <a href="#">הנהלת הקבוצה</a>
-                    <a href="#">פרסים והוקרות</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">קשרי משקיעים</a>
-                <div class="dropdown-content">
-                    <a href="#">אודות</a>
-                    <a href="#">היסטוריה</a>
-                    <a href="#">חזון וערכים</a>
-                    <a href="#">מבנה הקבוצה</a>
-                    <a href="#">חברי דירקטוריון</a>
-                    <a href="#">הנהלת הקבוצה</a>
-                    <a href="#">פרסים והוקרות</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">התחנות שלנו</a>
-                <div class="dropdown-content">
-                    <a href="#">אודות</a>
-                    <a href="#">היסטוריה</a>
-                    <a href="#">חזון וערכים</a>
-                    <a href="#">מבנה הקבוצה</a>
-                    <a href="#">חברי דירקטוריון</a>
-                    <a href="#">הנהלת הקבוצה</a>
-                    <a href="#">פרסים והוקרות</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">קריירה</a>
-                <div class="dropdown-content">
-                    <a href="#">אודות</a>
-                    <a href="#">היסטוריה</a>
-                    <a href="#">חזון וערכים</a>
-                    <a href="#">מבנה הקבוצה</a>
-                    <a href="#">חברי דירקטוריון</a>
-                    <a href="#">הנהלת הקבוצה</a>
-                    <a href="#">פרסים והוקרות</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">חדשות ומדיה</a>
-                <div class="dropdown-content">
-                    <a href="#">אודות</a>
-                    <a href="#">היסטוריה</a>
-                    <a href="#">חזון וערכים</a>
-                    <a href="#">מבנה הקבוצה</a>
-                    <a href="#">חברי דירקטוריון</a>
-                    <a href="#">הנהלת הקבוצה</a>
-                    <a href="#">פרסים והוקרות</a>
-                </div>
-            </li>
-            <ul>
-    </nav>
-</div>
-</header>
+    <div id="container">
 
+        <header>
+            <div class="header">
+                <a class="logo" href="http://www.paz.co.il/"></a>
+                <!-- The form -->
+                <div class="form-search">
+                    <form class="search-box" action="action_page.php">
+                        <input type="text" placeholder="רשום מילת חיפוש" name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <div id="langmenu">
+                    <ul>
+                        <li>
+                            <a href="https://web.archive.org/web/20171018152543/http://www.paz.co.il/index.aspx?id=4424">English</a> 
+                        </li>
+                    </ul>
+                </div>
+                <nav id="mainMenu">
+                    <ul>
+                        <li id="home">
+                            <a href="https://web.archive.org/web/20171018152543/http://www.paz.co.il/" class="home selectednode"></a>
+                        </li>
+                        <li id="sep"></li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">אודות</a>
+                            <div class="dropdown-content">
+                                <a href="#">אודות</a>
+                                <a href="#">היסטוריה</a>
+                                <a href="#">חזון וערכים</a>
+                                <a href="#">מבנה הקבוצה</a>
+                                <a href="#">חברי דירקטוריון</a>
+                                <a href="#">הנהלת הקבוצה</a>
+                                <a href="#">פרסים והוקרות</a>
+                            </div>
+                        </li>
+                        <li id="sep"></li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">חטיבות</a>
+                            <div class="dropdown-content">
+                                <a href="#">אודות</a>
+                                <a href="#">היסטוריה</a>
+                                <a href="#">חזון וערכים</a>
+                                <a href="#">מבנה הקבוצה</a>
+                                <a href="#">חברי דירקטוריון</a>
+                                <a href="#">הנהלת הקבוצה</a>
+                                <a href="#">פרסים והוקרות</a>
+                            </div>
+                        </li>
+                        <li id="sep"></li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">אחריות תאגידית</a>
+                            <div class="dropdown-content">
+                                <a href="#">אודות</a>
+                                <a href="#">היסטוריה</a>
+                                <a href="#">חזון וערכים</a>
+                                <a href="#">מבנה הקבוצה</a>
+                                <a href="#">חברי דירקטוריון</a>
+                                <a href="#">הנהלת הקבוצה</a>
+                                <a href="#">פרסים והוקרות</a>
+                            </div>
+                        </li>
+                        <li id="sep"></li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">קשרי משקיעים</a>
+                            <div class="dropdown-content">
+                                <a href="#">אודות</a>
+                                <a href="#">היסטוריה</a>
+                                <a href="#">חזון וערכים</a>
+                                <a href="#">מבנה הקבוצה</a>
+                                <a href="#">חברי דירקטוריון</a>
+                                <a href="#">הנהלת הקבוצה</a>
+                                <a href="#">פרסים והוקרות</a>
+                            </div>
+                        </li>
+                        <li id="sep"></li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">התחנות שלנו</a>
+                            <div class="dropdown-content">
+                                <a href="#">אודות</a>
+                                <a href="#">היסטוריה</a>
+                                <a href="#">חזון וערכים</a>
+                                <a href="#">מבנה הקבוצה</a>
+                                <a href="#">חברי דירקטוריון</a>
+                                <a href="#">הנהלת הקבוצה</a>
+                                <a href="#">פרסים והוקרות</a>
+                            </div>
+                        </li>
+                        <li id="sep"></li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">קריירה</a>
+                            <div class="dropdown-content">
+                                <a href="#">אודות</a>
+                                <a href="#">היסטוריה</a>
+                                <a href="#">חזון וערכים</a>
+                                <a href="#">מבנה הקבוצה</a>
+                                <a href="#">חברי דירקטוריון</a>
+                                <a href="#">הנהלת הקבוצה</a>
+                                <a href="#">פרסים והוקרות</a>
+                            </div>
+                        </li>
+                        <li id="sep"></li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">חדשות ומדיה</a>
+                            <div class="dropdown-content">
+                                <a href="#">אודות</a>
+                                <a href="#">היסטוריה</a>
+                                <a href="#">חזון וערכים</a>
+                                <a href="#">מבנה הקבוצה</a>
+                                <a href="#">חברי דירקטוריון</a>
+                                <a href="#">הנהלת הקבוצה</a>
+                                <a href="#">פרסים והוקרות</a>
+                            </div>
+                        </li>
+                        <ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <div id="tob-box">
+            <div class="top-pic">
+                <img alt="קמעונאות ומסחר" src="images/images/1908364606615453350.JPG" class="w3-opacity-min">
+                <div class="text-top">
+                    <h3>קמעונאות ומסחר</h3>
+                    <p>במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות. החטיבה פועלת...<br></p>
+                    <p><a href="index.aspx?id=4310" class="readMore white" target="_blank">
+                            <span>קרא עוד</span>
+                        </a></p>
+                </div>
 </body>
 
 </html>

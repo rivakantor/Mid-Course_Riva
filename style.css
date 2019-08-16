@@ -17,11 +17,23 @@ body {
 5. drop down
 */
 
+#container {
+  width: 900px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
 .header {
-  width: 100%;
-  height: 105px;
+  width: 900px;
+  height: 106px;
+  font-weight: bold;
+  color: #005ca0;
+  /* height: 105px; */
   position: relative;
-  background-color: rgb(144, 144, 144);
+  background: rgb(140, 140, 140);
+background: -moz-linear-gradient(top, #79757C 0%, #DCE0E0 100%);
+background: -webkit-linear-gradient(top, #79757C 0%, #DCE0E0 100%);
+background: linear-gradient(to bottom, #79757C 0%, #DCE0E0 100%);
   z-index: 100;
 }
 
@@ -30,13 +42,27 @@ a.logo {
   width: 142px;
   height: 93px;
   position: absolute;
-  bottom: -80px;
+  bottom: -20px;
   right: -8px;
   background-image: url("images/images/paz_logo.png");
 }
 
+a.home {
+  display: inline-block;
+  background-position: -17px top;
+  width: 17px;
+  background-image: url("images/images/menu_home2.png") no-repeat 0 top;
+  position: absolute;
+}
+
+.form-search {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  width: 152px;
+}
 form.search-box button {
-  margin:auto;
+  margin-right: 10%;
   padding: 5px;
   max-width: 25px;
   float: left;
@@ -65,24 +91,31 @@ form.search-box::after {
   display: table;
 }
 
-#mainMenu {
-  height: 33px;
-  position: relative;
-  top: 72px;
-  margin: 0 143px 0 0;
+#langmenu {
+  position: absolute;
+  top: 20px;
+  left: 180px;
 }
 
-nav > ul {
+#mainMenu > ul {
     list-style-type: none;
-    margin: 0;
-    align-items: center;
     overflow: hidden;
-    background-color: rgb(144, 144, 144);
-  }
+    height: 33px;
+    position: relative;
+    top: 72px;
+    margin: 0 143px 0 0;
+}
+
+
+li > #sep {
+  width: 4px;
+  height: 21px;
+  background-image: url(images/images/menu_sep.png) no-repeat 0 0px;
+  margin: 0 16px;
+}
 
 .dropdown-content {
   display: none;
-  position: absolute;
   background-color: rgb(144, 144, 144);
   min-width: 150px;
   box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
@@ -106,7 +139,7 @@ nav > ul {
     color: white;
     text-align: right;
     padding: 14px;
-    min-width: 150px;
+    /* min-width: 150px; */
     text-decoration: none;
   }
  
@@ -128,3 +161,15 @@ nav > ul {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  #top-box {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 30px;
+    display: block;
+}
+
+#top-box > .top-pic {
+  width: 293px;
+  height: 355px;
+}
