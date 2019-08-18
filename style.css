@@ -6,7 +6,7 @@ body {
     direction: rtl;
     text-align: right;
     font-family: "Arial (Hebrew)", Arial;
-
+    font-size: 15px;
 }
 
 /* there should be positioning: 
@@ -110,7 +110,7 @@ form.search-box::after {
   font-size: 12px;
 }
 
-#mainMenu > ul {
+.dropdown > li {
     list-style-type: none;
     display: flex;
     overflow: hidden;
@@ -118,14 +118,7 @@ form.search-box::after {
     position: relative;
     top: 72px;
     margin: 0 143px 0 0;
-}
-
-
-li > #sep {
-  width: 2px;
-  height: 21px;
-  background-image: url(images/images/menu_sep.png);
-  margin: 0 12px;
+    border: 1px solid black;
 }
 
 .dropdown {
@@ -144,6 +137,7 @@ li > #sep {
   display: none;
   background-color: rgb(144, 144, 144);
   min-width: 150px;
+  top: 104px
   box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
   z-index: 200;
 }
@@ -166,18 +160,14 @@ li > #sep {
     display: block;
   }
 
- /*
-.dropdown:hover .dropbtn {
-  background-color: rgb(144, 144, 144);
-}
- */
+div.dropdown-content > a:hover {
+  color: #005ca0;
 
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
   }
 
 .dropdown:hover .dropdown-content {
     display: block;
+
   }
 
 #top-box {
